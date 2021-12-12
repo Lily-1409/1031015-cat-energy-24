@@ -1,25 +1,25 @@
 .selection-program {
-   font-family: "oswald", sans-serif;
-   color: #FFFFFF;
-   background-color: rgba(104, 183, 56, 0.85);
-   background-image: url(../../img/seletion-program-cat.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
-   z-index: -2;
-   text-align: center;
-   padding: 27px 16px 20px;
+  position: relative;
+  font-family: "oswald", sans-serif;
+  color: #FFFFFF;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url(../../img/seletion-program-cat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+  text-align: center;
+  padding: 27px 16px 20px;
 
-   &::before {
-    position:absolute;
-    content: "";
-    background-color: rgba(104, 183, 56, 0.85);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left:0;
-   }
+  &::before {
+  position:absolute;
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left:0;
+  }
 }
 
 .selection-program-wrapper {

@@ -1,0 +1,93 @@
+.page-main-form {
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 27px 20px 32px;
+}
+
+.form-title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  margin-bottom: 37px;
+}
+
+.form-fill {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  margin-bottom: 39px;
+}
+
+.form-section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.form-section__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 26px 113px 35px 0;
+}
+
+.form-section__info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 14px 0 14px;
+}
+
+.form-section__info-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-section__program-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 20px 0px;
+}
+
+.form-section__program-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-section__field {
+  font-size: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+}
+.form-section__option-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.form-section__option-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form__notes {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 21px;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
