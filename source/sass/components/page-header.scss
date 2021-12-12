@@ -1,0 +1,19 @@
+.page-header {
+  font-family: "oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: block;
+}
+
+
