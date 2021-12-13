@@ -1,17 +1,17 @@
 .present {
   position: relative;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   margin: 35px 20px;
-  background-image: url(../../img/catalog/present-background.png);
+  background-image: url("../../img/catalog/present-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(104, 183, 56, 0.85);
-  z-index:-2;
+  z-index: -2;
   padding: 65px 58px 43px 61px;
 }
 
-.present:before {
+.present::before {
   position: absolute;
   content: "";
   background-color: rgba(104, 183, 56, 0.85);

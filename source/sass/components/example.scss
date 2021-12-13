@@ -1,6 +1,42 @@
 .example {
   padding: 25px 20px 40px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__characteristics {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__value {
+    display: block;
+    padding: 15px 42px 17px;
+    font-family: "oswald", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  &__parametr {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .example-container {
@@ -11,7 +47,8 @@
   font-family: "oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
-  color: #000;
+  font-weight: 400;
+  color: #000000;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -20,41 +57,7 @@
 .example__description {
   margin: 0;
   padding: 0;
-}
-
-.example {
-  &-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__characteristics {
-    position: relative;
-  }
-
-  &__value {
-    display: block;
-    padding: 15px 42px 17px;
-    font-family: "oswald", sans-serif;
-    font-size: 24px;
-    line-height: 24px;
-    color: #000;
-    text-transform: uppercase;
-    border: 1px solid #CDCDCD;
-    box-sizing: border-box;
-    border-radius: 3px;
-  }
-
-  &__parametr {
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  margin-bottom: 20px;
 }
 
 .example__cost {
@@ -63,7 +66,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 
@@ -73,5 +76,6 @@
   font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
 }

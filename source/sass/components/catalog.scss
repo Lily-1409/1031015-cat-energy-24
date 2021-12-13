@@ -6,7 +6,11 @@
   font-family: "oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
-  color: #000;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
 }
 
 .catalog__product-list {
@@ -19,8 +23,11 @@
   font-family: "oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #222;
+  font-weight: 400;
+  color: #222222;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog__product-description {
@@ -28,11 +35,16 @@
   line-height: 16px;
 }
 
-.all-button{
+.catalog__product-button {
+  margin-top: 22px;
+  margin-bottom: 44px;
+}
+
+.all-button {
   display: block;
   padding: 10px 109px;
-  color: #fff;
-  background-color: #68B738;
+  color: #ffffff;
+  background-color: #68b738;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -40,7 +52,7 @@
 }
 
 .show-more-button {
-  color: #444;
-  background-color: #F2F2F2;
+  color: #444444;
+  background-color: #f2f2f2;
   text-decoration: none;
 }
