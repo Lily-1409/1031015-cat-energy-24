@@ -1,12 +1,12 @@
 .action-program {
-  margin: 0 20px 40px 20px;
+  margin: 0 0 40px;
 }
 
 .action-program__title {
-  font-family: "oswald", sans-serif;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
   color: #000000;
   margin: 0;
   padding: 0;

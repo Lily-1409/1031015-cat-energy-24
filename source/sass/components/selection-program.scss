@@ -1,49 +1,42 @@
 .selection-program {
-  position: relative;
-  font-family: "oswald", sans-serif;
-  color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../../img/seletion-program-cat.jpg");
+  background-image: url("../img/seletion-program-cat.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -2;
+  width: 320px;
+  min-height: 302px;
   text-align: center;
-  padding: 27px 16px 20px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: rgba(104, 183, 56, 0.85);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
+  padding: 27px 0 20px;
 
   &__title {
+    font-family: $second-font;
+    font-weight: 400;
+    color: #ffffff;
     font-size: 36px;
     line-height: 36px;
-    font-weight: 400;
     padding: 0;
     margin: 0;
     margin-bottom: 25px;
   }
 
   &__slogan {
-    line-height: 14px;
+    font-family: $second-font;
     font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     margin-bottom: 29px;
   }
 
   &__link {
+    font-family: $second-font;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #68b738;
+    font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff;
     display: block;
     padding: 7px 44px;
-    background-color: rgba(104, 183, 56, 0.85);
   }
 }

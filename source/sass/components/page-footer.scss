@@ -1,17 +1,18 @@
 .page-footer {
   background-color: #f2f2f2;
-  padding: 26px 20px;
+  padding: 39px 0 26px;
 }
 
-.page-footer-wrapper {
-  margin: 0 auto;
+.page-footer__website-name {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .social-networks {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
+  padding: 24px 0;
 }
 
 .social-networks__item:not(:last-child) {
@@ -24,5 +25,6 @@
 
   &__name {
     text-decoration: none;
+    margin-bottom: 32px;
   }
 }

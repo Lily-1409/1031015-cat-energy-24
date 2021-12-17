@@ -1,21 +1,11 @@
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Oswald"),
-    url("../../fonts/oswaldregular.woff2") format("woff2"),
-    url("../../fonts/oswaldregular.woff") format("woff");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("Oswald"),
-    url("../../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../../fonts/oswaldmedium.woff") format("woff");
+.page {
+  height: 100%;
 }
 
 body {
@@ -27,6 +17,13 @@ body {
   color: #444444;
   background-color: #ffffff;
   margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .visually-hidden {
@@ -38,4 +35,9 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
 }

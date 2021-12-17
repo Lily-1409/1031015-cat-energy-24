@@ -1,26 +1,26 @@
 .page-main-form {
-  font-family: "oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  margin: 27px 20px 32px;
+  margin: 27px 0 32px;
 }
 
 .form-title {
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  color: #000000;
   margin: 0;
   padding: 0;
-  color: #000000;
   margin-bottom: 37px;
-  font-weight: 400;
 }
 
 .form-fill {
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 18px;
+  color: #000000;
   margin: 0;
   padding: 0;
-  color: #000000;
   margin-bottom: 39px;
 }
 
@@ -32,11 +32,13 @@
 }
 
 .form-section__title {
-  margin: 0;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  padding: 26px 113px 35px 0;
   color: #000000;
+  margin: 0;
+  padding: 26px 113px 35px 0;
 }
 
 .form-section__info-list {
@@ -61,6 +63,7 @@
 }
 
 .form-section__field {
+  font-style: inherit;
   font-size: inherit;
   line-height: inherit;
   text-transform: inherit;
@@ -80,17 +83,17 @@
 }
 
 .form__notes {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 21px;
-  text-align: center;
   text-transform: none;
   color: #000000;
+  margin-top: 21px;
+  text-align: center;
 }
 
 input::placeholder {
-  font-family: "oswald", sans-serif;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;

@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 20px 40px;
+  padding-bottom: 40px;
   background-color: #eaeaea;
 
   &-wrapper {
@@ -13,23 +13,22 @@
   }
 
   &__value {
-    display: block;
-    padding: 15px 42px 17px;
-    font-family: "oswald", sans-serif;
+    font-family: $second-font;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
-    font-weight: 400;
     color: #000000;
     text-transform: uppercase;
+    display: block;
+    padding: 15px 42px 17px;
     border: 1px solid #cdcdcd;
-    box-sizing: border-box;
     border-radius: 3px;
   }
 
   &__parametr {
+    font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    font-weight: 400;
     text-align: center;
     display: block;
     position: absolute;
@@ -44,10 +43,10 @@
 }
 
 .example__title {
-  font-family: "oswald", sans-serif;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -61,21 +60,24 @@
 }
 
 .example__cost {
-  font-family: "oswald", sans-serif;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  margin: 20px 0 40px;
 }
 
 
 .example__button {
-  border: none;
-  background-color: transparent;
-  font-family: "oswald", sans-serif;
+  font-family: $second-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
 }
