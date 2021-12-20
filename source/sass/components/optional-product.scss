@@ -1,0 +1,40 @@
+.optional-product {
+  margin: 25px 0 35px;
+}
+
+.optional-product__title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  padding: 25px 0 49px;
+}
+
+.optional-product__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.optional-product__name {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+}
+
+.optional-product__catalog-cost {
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.optional-product__button {
+  margin-bottom: 19px;
+}

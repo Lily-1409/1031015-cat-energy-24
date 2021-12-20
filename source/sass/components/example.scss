@@ -1,0 +1,83 @@
+.example {
+  padding-bottom: 40px;
+  background-color: #eaeaea;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__characteristics {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__value {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 42px 17px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
+
+  &__parametr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.example-container {
+  margin: 0 auto;
+}
+
+.example__title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.example__cost {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0;
+  margin: 20px 0 40px;
+}
+
+
+.example__button {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.cooperation {
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0;
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #111111;
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}

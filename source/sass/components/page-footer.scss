@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: #f2f2f2;
+  padding: 39px 0 26px;
+}
+
+.page-footer__website-name {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.social-networks {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding: 24px 0;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.htmlacademy {
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    text-decoration: none;
+    margin-bottom: 32px;
+  }
+}
