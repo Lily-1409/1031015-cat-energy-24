@@ -1,42 +1,117 @@
-.selection-program {
+.selection-program-wrapper {
+  position: relative;
   background-image: url("../img/seletion-program-cat.jpg");
   background-repeat: no-repeat;
-  width: 320px;
-  min-height: 302px;
   text-align: center;
   padding: 27px 0 20px;
+  min-height: 480px;
 
-  &__title {
-    font-family: $second-font;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 36px;
-    line-height: 36px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    background-image: none;
+    min-height: 870px;
+    z-index: 2;
+    text-align: start;
+    padding: 64px 207px 0 90px;
   }
 
-  &__slogan {
-    font-family: $second-font;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    margin-bottom: 29px;
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    background-image: url("../img/seletion-program-cat-desktop.jpg");
+    background-position: top right;
+    min-height: 553px;
+    text-align: start;
+    padding: 82px 730px 0 90px;
+  }
+}
+
+.selection-program-wrapper::before {
+  position: absolute;
+  content: " ";
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    width: 709px;
+    height: 609px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-57%);
+    z-index: -2;
   }
 
-  &__link {
-    font-family: $second-font;
-    font-weight: 400;
-    color: #ffffff;
-    background-color: #68b738;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    padding: 7px 44px;
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/index-can-desktop.png");
+    background-repeat: no-repeat;
+    width: 552px;
+    height: 499px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-29%);
+  }
+}
+
+.selection-program__title {
+  font-family: $second-font;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+}
+
+.selection-program__slogan {
+  font-family: $second-font;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 302px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.selection-program__link {
+  font-family: $second-font;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #68b738;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 7px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    width: 244px;
   }
 }

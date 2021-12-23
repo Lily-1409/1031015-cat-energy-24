@@ -1,6 +1,22 @@
 .page-footer {
   background-color: #f2f2f2;
-  padding: 39px 0 26px;
+  padding: 39px 0 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 0 56px;
+  }
+}
+
+.page-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__website-name {
@@ -21,10 +37,23 @@
 
 .htmlacademy {
   display: flex;
+  min-width: 320px;
   justify-content: space-between;
+  align-items: center;
 
-  &__name {
-    text-decoration: none;
-    margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    min-width: auto;
+  }
+}
+
+.htmlacademy__name {
+  text-decoration: none;
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
   }
 }
