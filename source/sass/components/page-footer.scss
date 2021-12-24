@@ -47,7 +47,39 @@
   }
 }
 
+.social-networks__vk {
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social-networks__inst {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social-networks__face {
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
 .htmlacademy__name {
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   display: block;
   margin-top: 28px;
