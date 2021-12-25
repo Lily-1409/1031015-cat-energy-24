@@ -1,5 +1,9 @@
 .action-program {
-  margin: 0 0 40px;
+  margin: 0 0 50px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px;
+  }
 }
 
 .action-program__title {
@@ -10,16 +14,59 @@
   color: #000000;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 32px;
+  }
 }
 
 .action-program__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 230px 245px 247px 249px;
+    column-gap: 84px;
+  }
+}
+
+.action-program__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    row-gap: 31px;
+  }
 }
 
 .action-program__description {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

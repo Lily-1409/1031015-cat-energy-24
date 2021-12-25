@@ -1,7 +1,7 @@
 // Global
-@import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
+@import "./global/global.scss";
 
 
 // components
@@ -14,6 +14,7 @@
 @import "./components/cooperation.scss";
 @import "./components/page-footer.scss";
 @import "./components/catalog.scss";
+@import "./components/optional-wrapper";
 @import "./components/optional-product.scss";
 @import "./components/present.scss";
 @import "./components/page-main-form";

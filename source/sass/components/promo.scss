@@ -1,34 +1,109 @@
+.promo-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
 .promo-program {
   background-color: #f2f2f2;
   padding: 24px 33px 22px 20px;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 69px 1fr;
+  align-items: center;
 
-  &__title {
-    font-family: $second-font;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 29px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 254px;
+    padding: 81px 62px 57px 52px;
   }
 
-  &__description {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 42px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 1fr;
+    padding: 41px 51px 59px 52px;
+  }
+}
+
+.promo-program__img {
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/4;
   }
 
-  &__link {
-    font-family: $second-font;
-    font-weight: 400;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.promo-program__title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-self: start;
+  grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    grid-column: 2/3;
+  }
+}
+
+.promo-program__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 42px;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 16px;
-    color: #000000;
-    text-transform: uppercase;
-    display: block;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+    margin-bottom: 27px;
+  }
+}
+
+.promo-program__link {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

@@ -2,15 +2,43 @@
   margin: 27px 0 32px;
 }
 
+.form {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .form-title {
   font-family: $second-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  text-transform: none;
   margin: 0;
   padding: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .form-fill {
@@ -19,9 +47,21 @@
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    margin-right: 345px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 905px;
+  }
 }
 
 .form-section {
@@ -37,18 +77,36 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  text-transform: none;
   margin: 0;
-  padding: 26px 113px 35px 0;
+  padding: 26px 93px 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 57px;
+  }
 }
 
 .form-section__info-list {
   margin: 0;
+  padding: 0;
   list-style-type: none;
-  padding: 14px 0 14px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .form-section__info-item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-section__program-list {
@@ -56,6 +114,35 @@
   list-style-type: none;
   padding: 20px 0;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
+}
+
+.form-section__info-contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.form-section__info-contact-item:not(:last-child) {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-section__program-item:not(:last-child) {
@@ -68,6 +155,7 @@
   line-height: inherit;
   text-transform: inherit;
   color: #444444;
+  width: 100%;
 }
 
 .form-section__option-list {
@@ -76,19 +164,51 @@
   list-style-type: none;
   padding-bottom: 20px;
   color: #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form-section__option-item:not(:last-child) {
   margin-bottom: 14px;
 }
 
+.button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    gap: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 568px 1fr;
+    gap: 61px;
+  }
+}
+
+.form__button {
+  border: none;
+}
+
 .form__notes {
+  font-family: $main-font;
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
   color: #000000;
   margin-top: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 input::placeholder {
@@ -98,4 +218,9 @@ input::placeholder {
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
