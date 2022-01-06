@@ -1,8 +1,11 @@
 .example {
+  position: relative;
   padding: 25px 0 40px;
   background-color: #eaeaea;
+  z-index: -2;
 
   @media (min-width: $tablet-width) {
+    background-color: #ffffff;
     padding: 43px 0 60px;
   }
 
@@ -19,6 +22,19 @@
 }
 
 .example-wrap-wrap {
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #eaeaea;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 436px;
   }
@@ -37,7 +53,6 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 43px;
     margin-bottom: 63px;
   }
 
@@ -125,6 +140,8 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #eaeaea;
+  padding: 0 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -133,6 +150,12 @@
     left: 50%;
     transform: translate(-50%, -130%);
     min-width: 162px;
+    background-color: #ffffff;
+    padding: 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 
@@ -176,6 +199,14 @@
 
 .example__cat-image {
   margin-bottom: 15px;
+  width: 280px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    height: 511px;
+    z-index: 5;
+  }
 }
 
 .example__button {
