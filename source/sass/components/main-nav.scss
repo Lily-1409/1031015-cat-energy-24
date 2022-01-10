@@ -143,5 +143,12 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
+    &.main-nav__link--color {
+      border-color: #68b738;
+    }
   }
+}
+
+.main-nav__link--color {
+  color: #000000;
 }

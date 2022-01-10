@@ -9,12 +9,16 @@
   background-color: rgba(104, 183, 56, 0.85);
   padding: 65px 58px 43px 61px;
 
+  @media (min-width: $tablet-width) {
+    margin: 69px 0 76px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 289px;
     align-self: flex-end;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 86px;
   }
 }
 
