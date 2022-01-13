@@ -9,9 +9,11 @@
   grid-template-columns: 1fr 1fr;
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
+
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 7fr 3fr 1fr;
     padding: 26px 0 28px;

@@ -21,6 +21,7 @@
     margin: 0 auto;
     padding: 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 100px;
   }
@@ -278,6 +279,7 @@
   color: #000000;
   text-transform: none;
   margin: 0 0 35px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
@@ -285,30 +287,33 @@
     padding-left: 36px;
   }
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     width: 100vw;
     background-color: #68b738;
     height: 2px;
     position: absolute;
     top: 15px;
+
     @media (min-width: $tablet-width) {
       top: 22px;
     }
   }
 
-  &:before {
+  &::before {
     display: none;
     right: 100%;
+
     @media (min-width: $tablet-width) {
       display: block;
     }
   }
 
-  &:after {
+  &::after {
     left: 100%;
     transform: translateX(26px);
+
     @media (min-width: $tablet-width) {
       transform: translateX(36px);
     }
