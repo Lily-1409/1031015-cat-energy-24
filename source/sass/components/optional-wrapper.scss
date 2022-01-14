@@ -1,8 +1,9 @@
-.optional-wrapper-wrapper {
+.optional-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 80px;
     align-items: center;
+    margin: 0 0 86px;
   }
 }

@@ -3,18 +3,44 @@
   color: #ffffff;
   text-align: center;
   margin: 35px 0;
-  background-image: url("../img/catalog/present-background.jpg");
+  background-image: url("../img/catalog/present-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(104, 183, 56, 0.85);
-  padding: 65px 58px 43px 61px;
+  padding: 65px 0 43px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/present-bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 69px 0 76px;
+    padding: 0 77px;
+    background-image: url("../img/catalog/present-bg-tablet.jpg");
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/present-bg-tablet@2x.jpg");
+    }
+  }
 
   @media (min-width: $desktop-width) {
+    padding: 55px 42px 42px;
+    margin: 0;
+    background-image: url("../img/catalog/present-bg-desktop.jpg");
     width: 245px;
     height: 289px;
-    align-self: flex-end;
-    margin: 0;
-    margin-bottom: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/present-bg-desktop@2x.jpg");
+    }
   }
 }
 
