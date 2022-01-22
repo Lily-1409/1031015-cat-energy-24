@@ -178,8 +178,10 @@
     flex-direction: column;
     align-items: flex-end;
     margin-left: auto;
+  }
 
-    &-service {
+  &-service {
+    @media (min-width: $desktop-width) {
       margin-right: 63px;
     }
   }
@@ -229,13 +231,18 @@
   border: none;
   background-color: transparent;
   position: relative;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dashed #dcdcdc;
+  }
 }
 
 .slider {
   background-color: #ffffff;
   width: 86px;
   height: 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #dcdcdc;
   border-radius: 6px;
   display: flex;
   align-items: center;
