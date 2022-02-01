@@ -95,12 +95,12 @@
 }
 
 .social-networks__link {
-
-  &:hover{
+  &:hover {
     .social-networks__vk,
     .social-networks__inst {
       fill: #68b738;
     }
+
     .social-networks__face {
       stroke: #68b738;
     }

@@ -71,7 +71,7 @@
       z-index: -1;
 
       @media (min-width: $desktop-width) {
-      right: 0;
+        right: 0;
       }
     }
 
@@ -96,7 +96,6 @@
 }
 
 .action-program__icon {
-
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
