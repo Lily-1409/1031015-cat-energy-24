@@ -23,6 +23,14 @@
   margin-bottom: 26px;
   text-align: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
@@ -55,6 +63,7 @@
 .social-networks__vk {
   width: 22px;
   height: 12px;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     width: 28px;
@@ -65,6 +74,7 @@
 .social-networks__inst {
   width: 16px;
   height: 16px;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -76,10 +86,28 @@
   width: 22px;
   height: 22px;
   fill: #f2f2f2;
+  stroke: #666666;
 
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
+  }
+}
+
+.social-networks__link {
+
+  &:hover{
+    .social-networks__vk,
+    .social-networks__inst {
+      fill: #68b738;
+    }
+    .social-networks__face {
+      stroke: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
@@ -88,6 +116,18 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    .htmlacademy__logo {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
@@ -104,4 +144,8 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+}
+
+.htmlacademy__logo {
+  fill: #666666;
 }
