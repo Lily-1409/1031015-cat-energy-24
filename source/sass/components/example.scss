@@ -12,6 +12,23 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 70px 0;
   }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: #eaeaea;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 465px;
+    }
+  }
 }
 
 .example-wrap {
@@ -22,23 +39,6 @@
 }
 
 .example-wrap-wrap {
-  @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #eaeaea;
-      height: 440px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-
-      @media (min-width: $desktop-width) {
-        height: 465px;
-      }
-    }
-  }
-
   @media (min-width: $desktop-width) {
     width: 436px;
   }

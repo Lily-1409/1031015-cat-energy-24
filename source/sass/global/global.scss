@@ -40,3 +40,22 @@ main {
     padding: 0 110px;
   }
 }
+
+.all-button {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
+}

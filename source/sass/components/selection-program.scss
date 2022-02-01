@@ -40,7 +40,7 @@
   min-height: 480px;
 
   @media (min-width: $tablet-width) {
-    min-height: 830px;
+    min-height: 844px;
     z-index: 2;
     text-align: start;
     padding: 34px 0 0 89px;
@@ -75,7 +75,7 @@
     width: 709px;
     height: 602px;
     top: auto;
-    bottom: 0;
+    bottom: 7px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -2;
@@ -92,6 +92,7 @@
     width: 552px;
     height: 499px;
     top: -27px;
+    bottom: auto;
     left: 50%;
     transform: translateX(-29%);
   }
