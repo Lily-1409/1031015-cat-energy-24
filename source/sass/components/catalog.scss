@@ -3,14 +3,14 @@
 }
 
 .catalog {
-  padding: 25px 0;
+  padding: 27px 0 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 33px 0;
+    padding: 33px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 18px 0;
+    padding-top: 22px;
   }
 }
 
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px;
+    padding: 0 110px;
   }
 }
 
@@ -44,6 +44,10 @@
     margin: 0;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 166px;
+  }
 }
 
 .catalog__product-list {
@@ -63,13 +67,13 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 143px;
+    row-gap: 145px;
     margin-bottom: 75px;
   }
 }
 
 .catalog__product-item {
-  padding: 25px 20px 25px;
+  padding: 20px 20px 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid #ebebeb;
@@ -83,19 +87,38 @@
 }
 
 .catalog__product-img {
+  position: relative;
   grid-column: 1/2;
-  grid-row: 1/3;
-  justify-self: center;
-  align-self: center;
+  grid-row: 1/2;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      top: auto;
+      bottom: 31px;
+      transform: translate(-50%, 0);
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 43px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
   }
+}
+
+.catalog__product__info {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .catalog__product-title {
@@ -107,15 +130,11 @@
   text-transform: uppercase;
   max-width: 76px;
   margin: 0 0 13px;
-  grid-column: 2/3;
-  grid-row: 1/2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 0 auto 21px;
+    margin: 0 auto 16px;
     text-align: center;
     max-width: 148px;
   }
@@ -123,23 +142,19 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 21px;
-    margin: 0 20px 13px;
-    text-align: center;
+    margin-bottom: 18px;
   }
 }
 
 .catalog__product-characteristics {
   font-size: 12px;
-  line-height: 16px;
-  grid-column: 2/3;
-  grid-row: 2/3;
   border-collapse: collapse;
+  line-height: 1.2;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    grid-column: 1/2;
-    grid-row: 3/4;
   }
 }
 
@@ -147,7 +162,7 @@
 .catalog__product-value {
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
-    padding: 7px 0 9px;
+    padding: 7px 0;
   }
 }
 
@@ -160,14 +175,18 @@
 }
 
 .catalog__product-button {
-  margin-top: 15px;
+  margin-top: 22px;
   grid-column: 1/3;
-  grid-row: 3/4;
+  grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
     margin-top: 33px;
     grid-column: 1/2;
     grid-row: 4/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
   }
 }
 
@@ -228,6 +247,15 @@
       width: 60px;
     }
   }
+
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+    &::before,
+    &::after {
+      top: 78px;
+    }
+  }
 }
 
 .catalog__more-title {
@@ -244,6 +272,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    max-width: 134px;
+    margin: 0 auto;
   }
 }
 
@@ -257,6 +287,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
+    margin: 22px auto 0;
+    max-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
   }
 }
 
@@ -278,13 +314,18 @@
   line-height: 26px;
   color: #000000;
   text-transform: none;
-  margin: 0 0 35px;
+  margin: 0 0 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
     padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 81px;
   }
 
   &::before,
@@ -307,6 +348,10 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 40px
     }
   }
 

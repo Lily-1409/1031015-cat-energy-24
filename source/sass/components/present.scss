@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(104, 183, 56, 0.85);
-  padding: 65px 0 43px;
+  padding: 59px 0 41px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/catalog/present-bg-mobile@2x.jpg");
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 69px 0 76px;
-    padding: 0 77px;
+    padding: 0 125px 0 77px;
     background-image: url("../img/catalog/present-bg-tablet.jpg");
     height: 200px;
     display: flex;
@@ -45,6 +45,11 @@
 }
 
 .present__terms {
+  margin: 45px 0 0;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
