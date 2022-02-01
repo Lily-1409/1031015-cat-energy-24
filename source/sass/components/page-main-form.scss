@@ -59,12 +59,13 @@
   text-transform: uppercase;
   margin: 0 0 39px;
   padding: 0;
+  min-width: 226px;
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 25px;
   }
 }
 
@@ -90,7 +91,7 @@
   }
 
   &--padding {
-    padding-bottom: 24px;
+    padding-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 72px;
@@ -123,12 +124,13 @@
   color: #000000;
   text-transform: none;
   margin: 0 0 35px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     width: auto;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,7 +228,7 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
@@ -238,7 +240,7 @@
 }
 
 .form-section__program-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 26px;
 }
 
 .form-radiobutton {
@@ -259,6 +261,11 @@
   height: 14px;
   width: 14px;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 .form-radiobutton__mark {
@@ -270,10 +277,15 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-radiobutton__name {
-  margin-left: 46px;
+  margin-left: 61px;
 }
 
 .form-section__info-contact-list {
@@ -359,6 +371,12 @@
   height: 14px;
   width: 18px;
   content: "";
+
+  /*
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
+  }*/
 }
 
 .form-checkbox__mark {
@@ -370,6 +388,11 @@
   top: 0;
   left: 0;
   transform: translateY(-10%);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-checkbox__name {
@@ -378,7 +401,7 @@
 
 .form-textarea {
   font-family: $second-font;
-  padding: 9px 25px;
+  padding: 9px 10px 9px 15px;
   width: 100%;
   min-width: 100%;
   max-width: 100%;

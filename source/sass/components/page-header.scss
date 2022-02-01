@@ -12,10 +12,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 66px;
+  min-height: 64px;
 
   @media (min-width: $tablet-width) {
     min-height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 166px;
   }
 }
 
@@ -26,16 +30,24 @@
     margin-right: 12px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 14px;
-  }
-
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
