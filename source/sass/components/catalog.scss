@@ -116,7 +116,6 @@
   }
 
   &--small-size {
-
     @media (min-width: $tablet-width) {
       width: 160px;
       height: 174px;
@@ -124,7 +123,6 @@
   }
 
   &--big-size {
-
     @media (min-width: $tablet-width) {
       width: 168px;
       height: 200px;
