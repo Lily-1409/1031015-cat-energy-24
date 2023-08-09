@@ -2,11 +2,13 @@
   "name": "cat-energy-24",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "homepage": "https://lily-1409.github.io/1031015-cat-energy-24",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -26,7 +28,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
